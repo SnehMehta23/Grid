@@ -1,6 +1,7 @@
 body {
   font-family: "QuincyCFExtraBold", serif;
   font-size: 16px;
+  background-color: #fefef8;
 }
 
 /* Grid Styling */
@@ -11,7 +12,6 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(6.25rem, auto);
   grid-gap: 0.625rem;
-  position: relative;
   text-align: center;
 }
 
@@ -21,47 +21,84 @@ body {
   border-radius: 1.875rem;
 }
 
-/* Main Sections of CSS */
-nav {
-  grid-column: 1 / 13;
-}
-
-header {
-  grid-column: 2/12;
-  grid-row: 2 / 4;
-}
-
 main {
   grid-column: 1 / 13;
   grid-row: 4 / 8;
 }
 
-.official-national-parks {
-  grid-column: 1 / 13;
-  grid-row: 8 / 12;
-}
-
 .discover-top-activities {
   grid-column: 1 / 13;
-  grid-row: 12 / 16;
+  grid-row: 9 / 14;
 }
 
 .carousel-section {
   grid-column: 1 / 13;
-  grid-row: 16 / 20;
+  grid-row: 14 / 18;
 }
 
 .explore-the-country {
   grid-column: 1 /13;
-  grid-row: 20 / 24;
+  grid-row: 18 / 22;
 }
 
 footer {
   grid-column: 1 / 13;
-  grid-row: 24 / 27;
+  grid-row: 22 / 26;
 }
 
+/* Nav Styling */
+nav {
+  grid-column: 1 / 13;
+  /* background: #fefef8 !important; */
+}
+
+.nav-bar {
+  /* reset */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+.logo {
+
+}
+
+.nav-links {
+
+}
+
+/* Header Styling */
+header {
+  grid-column: 2/12;
+  grid-row: 2 / 4;
+  background: #fefef8 !important;
+  display: inline;
+}
+
+header h1 {
+  color: #743100;
+  font-size: 5rem;
+  position: relative;
+  margin-top: 0.1rem;
+  margin-bottom: 0;
+}
+
+header p {
+  color: #743100;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Main Styling */
+
 /* First Section Styling */
+.official-national-parks {
+  grid-column: 1 / 13;
+  grid-row: 8 / 9;
+}
+
 .section-div {
   width: 100%;
   display: flex;
