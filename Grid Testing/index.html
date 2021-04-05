@@ -16,11 +16,11 @@
       <nav>
         <ul class="nav-bar">
           <!-- img of logo or something here later instead of the text insied <a> replace with img-->
-          <li class="logo"><span><a href="">The National Parks</a></span></li>
-          <li class="nav-links"><a href=""></a>About</li>
-          <li class="nav-links"><a href=""></a>Parks</li>
-          <li class="nav-links"><a href=""></a>Log In</li>
-          <li class="nav-links"><a href=""></a>Sign Up</li>
+          <li class="logo"><a href="">The National Parks</a></li>
+          <li class="nav-links"><a href="">About</a></li>
+          <li class="nav-links"><a href="">Parks</a></li>
+          <li class="nav-links"><a href="">Log in</a></li>
+          <!-- <button class="btn-cta"> --><li class="nav-links"><a class="btn-cta" href="">Sign up</a></li><!--</button> -->
         </ul>
       </nav>
       <!-- Page Title -->
@@ -29,7 +29,43 @@
           <p>Uncover over 450 unique & inviting </br> locations across the United States</p>
       </header>
       <!-- Hero Section -->
-      <main>Main</main>
+      <main>
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+              <img src="" alt="">
+            </div>
+            <div class="slide">
+              <img src="" alt="">
+            </div>
+            <div class="slide">
+              <img src="" alt="">
+            </div>
+            <div class="slide">
+              <img src="" alt="">
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            
+          </div>
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </main>
 
       <!-- First Section Under Hero Section (Main) -->
       <section class="official-national-parks">
