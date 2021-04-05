@@ -21,11 +21,6 @@ body {
   border-radius: 1.875rem;
 }
 
-.discover-top-activities {
-  grid-column: 1 / 13;
-  grid-row: 9 / 14;
-}
-
 .carousel-section {
   grid-column: 1 / 13;
   grid-row: 14 / 18;
@@ -138,11 +133,6 @@ main {
   grid-row: 4 / 8;
 }
 
-.slider {
-  background-color: yellow;
-}
-
-
 /* First Section Styling */
 .official-national-parks {
   grid-column: 1 / 13;
@@ -163,6 +153,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
   grid-auto-rows: minmax(100%, auto);
   border-radius: 1.875rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }
 
 .inner-section-div h2 {
@@ -227,6 +218,8 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* still need to fix this a padding situation */
+  /* box-shadow: 0 5px 20px rgba(0,0,0,.3); */
 }
 
 .column a b {
@@ -241,3 +234,68 @@ main {
   width: 48px;
   height: 48px;
 }
+
+/* Second Section Styling */
+.discover-top-activities {
+  grid-column: 1 / 13;
+  grid-row: 9 / 14;
+}
+
+.activities-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title {
+  text-align: left !important;
+  padding: 0;
+  margin: 0;
+}
+
+/* add hover effect bob up on the whole card */
+
+.box {
+  position: relative;
+  /* margin: 1rem; */
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+
+/* .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: #000;
+}  */
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #743100;
+  z-index: 4;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.details h3 {
+  margin: 10px 0 0;
+  color: #fafafa;
+  text-align: center;
+  padding: 0;
+}
+
+.details h3 span {
+  color: #fafafa;
+  font-size: 16px;
+}
+
+
